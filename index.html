@@ -78,7 +78,7 @@
         </div>
     </section>
 
-    <!-- ✅ Portfolio Section -->
+    <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio">
         <div class="container">
             <h2 class="section-title fade-in">Featured Work</h2>
@@ -165,7 +165,7 @@
         </div>
     </section>
 
-    <!-- ✅ Contact Section -->
+    <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="contact-floating-shapes">
             <div class="contact-shape contact-shape-1"></div>
@@ -204,7 +204,7 @@
         </div>
     </section>
 
-    <!-- ✅ Footer -->
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
@@ -221,32 +221,33 @@
         </div>
     </footer>
 
+    <!-- Scripts -->
     <script src="templatemo-personal-javascripts.js"></script>
 
-    <!-- ✅ EmailJS -->
+    <!-- EmailJS -->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script>
-        (function() {
-            emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your EmailJS Public Key
-        })();
+      (function() {
+        emailjs.init("pHi4sFnK9Xek-aACu"); // Your public key
+      })();
 
-        document.getElementById("contact-form").addEventListener("submit", function(e) {
-            e.preventDefault();
-            emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", {
-                name: document.getElementById("name").value,
-                email: document.getElementById("email").value,
-                subject: document.getElementById("subject").value,
-                message: document.getElementById("message").value
-            })
-            .then(() => {
-                alert("✅ Message sent successfully!");
-                e.target.reset();
-            })
-            .catch((error) => {
-                console.error("Error:", error);
-                alert("❌ Failed to send message. Try again later.");
-            });
+      document.getElementById("contact-form").addEventListener("submit", function(e) {
+        e.preventDefault();
+        emailjs.send("service_ov051bs", "template_z2adeqk", {
+          name: document.getElementById("name").value,
+          email: document.getElementById("email").value,
+          subject: document.getElementById("subject").value,
+          message: document.getElementById("message").value
+        })
+        .then(() => {
+          alert("✅ Message sent successfully!");
+          e.target.reset();
+        })
+        .catch((err) => {
+          console.error("Error:", err);
+          alert("❌ Failed to send message. Try again later.");
         });
+      });
     </script>
 </body>
 </html>
