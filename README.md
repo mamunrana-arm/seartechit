@@ -31,25 +31,6 @@ Bootstrap / Tailwind CSS (if applicable)
 
 Markdown (for content management)
 
-🧩 Setup & Deployment
-
-If you want to run or modify this project locally:
-
-# Clone the repository
-git clone https://github.com/<your-username>/<your-repo>.git
-
-# Navigate to the project folder
-cd <your-repo>
-
-# Open index.html in your browser
-
-
-To deploy updates:
-
-Commit your changes to the main branch.
-
-Push to GitHub — Pages will automatically rebuild and redeploy the site.
-
 📬 Contact
 
 📧 Email: contact@searchtechit.net
